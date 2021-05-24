@@ -1,0 +1,25 @@
+{
+    "name": "setup-language-syntax-highlighting",
+    "displayName": "Setup language syntax highlighting",
+    "description": "Syntax highlighting for a custom language called setup",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "setup",
+            "aliases": ["Setup", "setup"],
+            "extensions": [".setup",".steps"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "setup",
+            "scopeName": "source.setup",
+            "path": "./syntaxes/setup.tmLanguage.json"
+        }]
+    }
+}
